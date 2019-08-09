@@ -9,27 +9,9 @@ public class Main {
 		String data = sc.nextLine();
 
 		NonenseCoinChain nc = new NonenseCoinChain(data);
-
+		nc.userInput();
 		
-		Scanner input = new Scanner(System.in);
-		System.out.println("1. View Chain \n2.Mining \n3.Validate");
-
-		if (input.nextInt() == 1) {
-			
-			nc.view();
-
-		} 
 		
-		else if(input.nextInt()==2) {
-			nc.mineNewCoin();
-
-		}
-		
-		else
-		{
-			
-			
-		}
 		
 	/*	Scanner sc = new Scanner(System.in);
 		System.out.println("Enter data for Genesis Block : ");

@@ -3,6 +3,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -80,6 +81,32 @@ public class NonenseCoinChain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			throw new Exception("Error in Hash Function");
+		}
+		
+	}
+	
+	public void userInput() throws Exception
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("1. View Chain \n2. Mining \n3. Validate");
+		int userValue=input.nextInt();
+		if (userValue == 1) {
+			System.out.println("inside 1st option");
+			view();
+
+		} 
+		
+		else if(userValue== 2) {
+			System.out.println("inside 2nd option");
+			mineNewCoin();
+
+		}
+		
+		else
+		{
+			System.out.println("inside 3rd option");
+			validate(blockList);
+			
 		}
 		
 	}
