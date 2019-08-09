@@ -5,29 +5,10 @@ public class Main {
 
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter data for Genesis Block : ");
+		System.out.println("Enter data for initial Block : ");
 		String data = sc.nextLine();
 
 		NonenseCoinChain nc = new NonenseCoinChain(data);
 		nc.userInput();
-		
-		
-		
-	/*	Scanner sc = new Scanner(System.in);
-		System.out.println("Enter data for Genesis Block : ");
-		String data = sc.nextLine();
-
-		NonenseCoinChain nc = new NonenseCoinChain(data);
-
-		while (true) {
-			boolean flag = nc.mineNewCoin();
-			nc.view();
-			if (flag) {
-				Thread.sleep(10000);
-			}
-		}*/
-
-		
-
 	}
 }
